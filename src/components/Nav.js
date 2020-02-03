@@ -41,12 +41,9 @@ export const Nav = ({ user }) => {
                 <NavLink exact to='/' activeClassName='active'>
                     <img className='logo' src='https://i.imgur.com/IiKnuHJ.png'></img>
                 </NavLink>
-                <SearchField
-                    // placeholder="Search..."
-                    // onChange = {onChange}
-                    classNames="searchBar"
-                />
-                <h1 className='Games'> Games </h1>
+                <NavLink className='nav-register' exact to='/post' activeClassName='active'>
+                    Post
+                </NavLink>
                 {user ? authenticatedNav : unauthenticatedNav}
                 <div>
                     {user && (<p className='welcome-sign'>Welcome {user.username}</p>)}
