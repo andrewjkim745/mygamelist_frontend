@@ -1,0 +1,25 @@
+.column-form-background {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid grey;
+    width: 15rem;
+    box-shadow: 1px 1px 10px 1px gray;
+
+}
+
+.column-auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+input {
+    margin-top: 1rem;
+}
+
+button {
+    margin-top: 1rem;
+}

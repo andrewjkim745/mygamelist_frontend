@@ -1,0 +1,51 @@
+.nav-container {
+    display: flex;
+    height: 12vh;
+    border-bottom: 1px solid gainsboro;
+    box-shadow: 1px 1px 10px 1px gray;
+    background-color: white;
+    /* justify-content: space-between; */
+}
+
+.nav-signin-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.logo {
+    width: 30%;
+}
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-register {
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.searchBar {
+}
+
+.welcome-sign {
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.searchBar .react-search-field-input {
+    height: .01rem !important;
+}
+
+
+.Games {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+
+}
