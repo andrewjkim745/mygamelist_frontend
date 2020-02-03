@@ -27,6 +27,7 @@ class GameDetails extends React.Component {
 
 
     componentDidMount() {
+        this.getGame()
         this.onView()
         // this.getComments()
         // this._isMounted = true;
