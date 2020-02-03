@@ -7,6 +7,13 @@
     
 }
 
+
+.link {
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+}
+
 .card-container {
     border: 2px black;
     margin: 0 auto;
