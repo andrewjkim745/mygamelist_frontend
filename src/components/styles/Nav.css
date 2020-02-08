@@ -5,6 +5,7 @@
     box-shadow: 1px 1px 10px 1px gray;
     background-color: white;
     /* justify-content: space-between; */
+    background-color: #F4C095;
 }
 
 .nav-signin-row {
@@ -24,11 +25,13 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 .nav-register {
     text-decoration: none;
     color: black;
     font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
 }
 
 .searchBar {

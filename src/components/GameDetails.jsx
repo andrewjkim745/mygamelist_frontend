@@ -1,5 +1,5 @@
 import React from 'react'
-// import './Styles/PostDetails.css'
+import './styles/GameDetails.css'
 import axios from 'axios'
 import Moment from 'react-moment'
 
@@ -40,10 +40,10 @@ class GameDetails extends React.Component {
         console.log('hello')
         await axios.get(`http://localhost:3000/games/${this.props.match.params.id}`)
             .then((response) => {
-                console.log(response.data)
+                console.log(response.data.description)
                 this.setState({
                     title: response.data.title,
-                    description: response.description,
+                    description: response.data.description,
                     image: response.data.image,
                     views: response.data.views,
                     rating: response.data.rating,
@@ -90,11 +90,10 @@ render() {
         <div className='outer-container'>
             <div className='post-container'>
                 <div className='votes-container'>
-                    <p className='votes'>{this.state.votes ? this.state.votes : 0}</p>
+                    <p className='votes'>{this.state.rating ? this.state.rating : 0}</p>
                 </div>
                 <div className='top-container'>
                     <div className='user'>
-                        <p>u/{this.state.username}-</p>
                         <Moment fromNow>{this.state.date}</Moment>
 
                     </div>
@@ -104,16 +103,6 @@ render() {
                     <div className='bottom-container'>
                         <p className='views'>{this.state.views < 1 ? 1 : this.state.views} views</p>
                     </div>
-                    {/* <div>
-                            {this.state.comments[0]}
-
-                        </div>
-                        <div>
-                            {this.state.comments[1]}
-                        </div>
-                        <div>
-                            {this.state.comments[2]}
-                        </div> */}
                 </div>
 
 
