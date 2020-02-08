@@ -103,16 +103,6 @@ render() {
                     <div className='bottom-container'>
                         <p className='views'>{this.state.views < 1 ? 1 : this.state.views} views</p>
                     </div>
-                    {/* <div>
-                            {this.state.comments[0]}
-
-                        </div>
-                        <div>
-                            {this.state.comments[1]}
-                        </div>
-                        <div>
-                            {this.state.comments[2]}
-                        </div> */}
                 </div>
 
 

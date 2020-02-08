@@ -21,3 +21,14 @@
     box-shadow: 1px 1px 10px 1px gray;
     margin-top: 50px;
 }
+
+.edit {
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.delete {
+    font-family: 'Bebas Neue', cursive;
+}

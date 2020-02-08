@@ -6,6 +6,7 @@ import Login from '../Login'
 import SignOut from '../SignOut'
 import Register from '../Register'
 import GameDetails from '../GameDetails'
+import UpdateGame from '../UpdateGame'
 import Post from '../Post'
 
 
@@ -39,6 +40,12 @@ const Routes = ({ user, setUser, clearUser }) => (
             path='/post'
             render={props => <Post {...props} />}
         />
+        <Route
+            exact
+            path='/games/:id/edit'
+            render={props => <UpdateGame {...props} />}
+        />
+
 
     </Switch>
 )

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/GameCard.css'
+import Image from 'react-image-resizer'
 
 
 
@@ -10,7 +11,11 @@ const GameCard = (props) => {
             <h1 className={props.title.length < 15 ? 'game-title' : 'game-title-wrap'}>{props.title} </h1>
             </div>
             <div>
-                <img src={props.image} />
+                <Image
+                 src={props.image} 
+                 height={350}
+                 width={320}
+                 />
             </div>
             <div>
                 <p>{props.genre}</p>

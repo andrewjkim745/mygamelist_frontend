@@ -42,10 +42,22 @@ class Home extends React.Component {
     //     })
     // }
 
-    correctGamesRender = () => {
-
+    deleteGame = async (game) => {
+        await axios.delete(`http://localhost:3000/games/${game.id}`)
+        this.getGames();
     }
 
+//     handleDelete(game) {
+//     fetch(`http://localhost:3000/games/${game.id}`, {
+//       method: 'DELETE',
+//       // headers: {
+//       //   'Accept': 'application/json, text/plain, */*',
+//       //   'Content-Type': 'application/json'
+//       // }
+//     })
+//     console.log("hi")
+//     this.getGames();
+//   }
 
 
 
@@ -64,6 +76,10 @@ class Home extends React.Component {
 
                                 />
                             </NavLink>
+                            <NavLink exact to ={`/games/${game.id}/edit`} className='edit'>
+                                <h2>edit</h2>
+                            </NavLink>
+                            <h2 className='delete' onClick={() => this.deleteGame(game)}>delete</h2>
                         </div>
                     )
                 })}
