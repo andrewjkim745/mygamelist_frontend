@@ -17,3 +17,9 @@
 
 
 [x] Set up Backend
+
+
+[x]Responsive
+
+
+[x]Style to make it look professional
